@@ -6,7 +6,7 @@
 
 ## React Router Installation
 First, run `npm install react-router-dom`
-Then, add the following imports to your index.js:
+Then, add the following imports to your App.js:
 
 ```javascript
 import ReactDOM from "react-dom/client";
@@ -23,18 +23,18 @@ Then inside the `root.render()` block, do this:
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}/>
+      <Route path="/" element={<LandingPage />}/>
     </Routes>
   </BrowserRouter>
 );
 ```
 
-This will create a single route, displaying the `App` component.
+This will create a single route, displaying the `LandingPage` component.
 
 ## Creating new Routes
 Each route (page) you create will need its own component for display.
 
-To add it to your routes, add a new Route component to index.js like so:
+To add it to your routes, add a new Route component to App.js like so:
 
 ```javascript
 <Route path="/pathtopage" element={<YourComponentNameHere />}/>
@@ -75,3 +75,6 @@ Or, if you have a CSS class for the active/inactive links:
             Messages
           </NavLink>
 ```
+
+## Further Info
+For complete reference and tutorial, see: https://reactrouter.com/docs/en/v6
