@@ -41,7 +41,14 @@ To add it to your routes, add a new Route component to App.js like so:
 ```
 
 ## Links
-There are two kinds of links in React Router.  `Link` and `NavLink`. 
+There are two kinds of links in React Router,  `Link` and `NavLink`. 
+
+You can get references to them via the following import statement: 
+
+```javascript
+import {Link, NavLink} from "react-router-dom";
+```
+
 `Link` is for most of your navigation purposes, and it looks like this:
 
 ```javascript
